@@ -1,0 +1,17 @@
+.button {
+    text-align: center;
+    cursor: pointer;
+    height: 56px;
+    width: 200px;
+    border-radius: 55px;
+    background-color: #ffffff;
+    border: 1.4px solid #458ff6;
+    font-size: 18px;
+    color: #458FF6;
+    outline: none;
+}
+
+.blue {
+    background-color: #458FF6;
+    color: #ffffff;
+}

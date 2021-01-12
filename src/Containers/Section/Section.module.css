@@ -1,0 +1,21 @@
+.section{
+    width: 100%;
+    background-image: url("../../img/header_content_bg.png");
+    background-repeat: no-repeat;
+}
+
+.section_content{
+    display: flex;
+    width: 90%;
+    margin: 84px auto;
+}
+
+.section_title{
+    width: 50%;
+    align-self: center;
+    margin: 0 20px;
+}
+
+.section_img{
+    width: 50%;
+}

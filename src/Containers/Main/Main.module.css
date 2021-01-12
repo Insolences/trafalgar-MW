@@ -1,0 +1,31 @@
+.main{
+    width: 100%;
+}
+
+.section{
+    width: 100%;
+    background-image: url("../../img/service_bg_element.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 84px auto;
+}
+
+.header_title{
+    width: 50%;
+    align-self: center;
+    margin: 0 20px;
+}
+
+.header_img{
+    width: 50%;
+}
