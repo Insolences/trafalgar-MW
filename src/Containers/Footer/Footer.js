@@ -10,6 +10,7 @@ export function Footer() {
                     <img src={logo} />
                     <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online
                         for everyone</p>
+                    <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
                 </div>
                 <div className={s.footer_content_block}>
                     <p>Company</p>
