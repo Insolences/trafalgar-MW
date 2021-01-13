@@ -12,9 +12,15 @@ import  header_illustration_img from "../../img/trafalgar-header illustration.pn
 import leading_providers_img from "../../img/leading-providers-illustration.png"
 import download_mobile_img from "../../img/download_mobile_img.png"
 
+import detection_img from "../../img/CheckOut/image1.png"
+import medicines_img from "../../img/CheckOut/image2.png"
+import natural_img from "../../img/CheckOut/image2.png"
+
 import {Section} from "../Section/Section";
 import {CardService} from "../../Components/Card_service/CardService";
 import {Button} from "../../Components/Button/Button";
+import Carousel from "../../Components/Carousel/Carousel";
+import {CheckOutCard} from "../../Components/CheckOut_card/CheckOutCard";
 
 export function Main() {
     return (
@@ -26,11 +32,14 @@ export function Main() {
                       To us, it’s not just work. We take pride in the solutions we deliver'
                       img={header_illustration_img}
                       button_blue_color={true}
+                      button_text = 'Consult today'
                       background=''
              />
                 <div className={s.section}>
-                    <h3>Our services</h3>
-                    <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+                    <div className={s.main_title}>
+                        <h3>Our services</h3>
+                        <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+                    </div>
                     <div className={s.section_content}>
                        <CardService
                             img={search_doctor}
@@ -47,8 +56,6 @@ export function Main() {
                             title="Consultation"
                             content="Free consultation with our trusted doctors and get the best recomendations"
                         />
-                   </div>
-                    <div className={s.section_content}>
                         <CardService
                             img={details}
                             title="Details info"
@@ -66,7 +73,7 @@ export function Main() {
                         />
                     </div>
                 </div>
-            <Button blue={false} text='Learn more'/>
+            <Button text='Learn more'/>
             <Section reverse={true}
                      ractangle={true}
                      title='Leading healthcare providers'
@@ -74,6 +81,7 @@ export function Main() {
                      To us, it’s not just work. We take pride in the solutions we deliver'
                      img={leading_providers_img}
                      button_blue_color={false}
+                     button_text = 'Learn more'
                      background=''
             />
             <Section reverse={false}
@@ -83,8 +91,38 @@ export function Main() {
                      To us, it’s not just work. We take pride in the solutions we deliver'
                      img={download_mobile_img}
                      button_blue_color={false}
+                     button_text='Download'
                      background=''
             />
+            <div className={s.carousel_container}>
+                <div className={s.carousel_content}>
+                    <Carousel/>
+                </div>
+            </div>
+            <div className={s.check_out_container}>
+                <div className={s.check_out_content}>
+                    <h3>Check out our latest article</h3>
+                    <div className={s.check_out_card_list}>
+                        <CheckOutCard
+                            img={detection_img}
+                            title='Disease detection, check up in the laboratory'
+                            content='In this case, the role of the health laboratory is very important to do
+                            a disease detection...'
+                        />
+                        <CheckOutCard
+                            img={medicines_img}
+                            title='Herbal medicines that are safe for consumption'
+                            content='Herbal medicine is very widely used at this time because of its very good for your health...'
+                        />
+                        <CheckOutCard
+                            img={natural_img}
+                            title='Natural care for healthy facial skin'
+                            content='A healthy lifestyle should start from now and also for your skin health. There are some...'
+                        />
+                    </div>
+                    <Button text='View all'/>
+                </div>
+            </div>
         </div>
     );
 }

@@ -1,0 +1,24 @@
+.test_buttons{
+    position: relative;
+    padding: 24px;
+}
+
+.carousel_left_button{
+    height: 17px;
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+}
+
+.carousel_right_button{
+    height: 17px;
+    position: absolute;
+    bottom: 0;
+    right: 450px;
+}
+
+.carousel_img_bg{
+    background-image: url("../../img/carousel/carousel_bg.png");
+    background-repeat: no-repeat;
+    border-radius: 24px;
+}

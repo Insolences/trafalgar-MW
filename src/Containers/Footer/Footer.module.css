@@ -1,3 +1,27 @@
 .footer{
-    background-color: aqua;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    padding: 124px 0 114px 0;
+    margin-top: 202px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.footer_content_block{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.footer_content_block:first-child{
+    width: 40%;
+    align-items: flex-start;
+    text-align: start;
 }

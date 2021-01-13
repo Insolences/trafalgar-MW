@@ -1,17 +1,26 @@
 .card_service{
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 354px;
+    max-width: 282px;
     align-items: start;
     justify-content: center;
     background: #FFFFFF;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
-    padding: 0 34px;
+    padding: 34px 34px;
     margin: 34px;
+}
+
+.card_service h4{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 56px;
+    margin: 22px 0 2px 0;
 }
 
 .card_service p{
     text-align: start;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7D7987;
 }

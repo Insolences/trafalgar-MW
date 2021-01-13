@@ -10,39 +10,22 @@ export function Section({
                             ractangle = false,
                             content='',
                             button_blue_color = true,
+                            button_text = '',
                             background = ''
 }) {
-
-    if (!reverse){
-        return (
-            <div className={s.section}>
-                <div className={s.section_content}>
-                    <div className={s.section_title}>
-                        <h2>{title}</h2>
-                        { ractangle ? '---------' : ''}
-                        <p>{content}</p>
-                        <Button blue={button_blue_color} text='Consult today'/>
-                    </div>
-                    <div>
-                        <img src={img} className={s.section_img}/>
-                    </div>
-                </div>
-            </div>
-        );
-    } else return (
+    return (
         <div className={s.section}>
-            <div className={s.section_content}>
-                <div>
-                    <img src={img} className={s.section_img}/>
-                </div>
+            <div className={`${s.section_content} ${reverse ? s.reverse : ''}`}>
                 <div className={s.section_title}>
-                    <h2>Virtual healthcare for you</h2>
+                    <h3>{title}</h3>
                     { ractangle ? '---------' : ''}
-                    <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
-                    <Button blue={button_blue_color} text='Consult today'/>
+                    <p>{content}</p>
+                    <Button filled={button_blue_color} text={button_text}/>
+                </div>
+                <div className={s.section_img_container}>
+                    <img src={img} className={s.section_img} alt=''/>
                 </div>
             </div>
         </div>
-    )
-
+    );
 }
