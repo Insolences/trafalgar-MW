@@ -13,14 +13,33 @@
     margin: 84px auto;
 }
 
+@media all and (max-width: 1180px){
+    .section_content{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
 .section_content.reverse {
     flex-direction: row-reverse;
 }
 
+@media all and (max-width: 1180px){
+    .section_content.reverse{
+        flex-direction: column-reverse;
+    }
+}
+
 .section_title{
-    max-width: 445px;
+    width: 30%;
     align-self: center;
     margin: 0 60px;
+}
+
+@media all and (max-width: 1180px){
+    .section_title{
+        width: 100%;
+    }
 }
 
 .section_title h2{
@@ -49,6 +68,12 @@
     margin: 0 52px;
 }
 
-.section_img{
+@media all and (max-width: 1180px){
+    .section_img_container{
+        margin: 52px;
+    }
+}
 
+.section_img{
+    width: 100%;
 }

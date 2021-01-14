@@ -7,14 +7,14 @@
     height: 17px;
     position: absolute;
     bottom: 0;
-    left: 450px;
+    left: 37%;
 }
 
 .carousel_right_button{
     height: 17px;
     position: absolute;
     bottom: 0;
-    right: 450px;
+    right: 37%;
 }
 
 .carousel_img_bg{
@@ -30,11 +30,31 @@
     padding: 40px 118px 80px 118px;
 }
 
+@media all and (max-width: 800px){
+    .carousel_content{
+        flex-direction: column;
+        padding: 20px 64px 40px 64px;
+    }
+}
+
+@media all and (max-width: 500px){
+    .carousel_content{
+        flex-direction: column;
+        padding: 5px 10px 5px 10px;
+    }
+}
+
 .carousel_img_block{
     display: flex;
     width: 46%;
     align-items: center;
     justify-content: center;
+}
+
+@media all and (max-width: 800px){
+    .carousel_img_block{
+        width: 100%;
+    }
 }
 
 .carousel_img_block h4{
@@ -73,6 +93,20 @@
     text-align: start;
 }
 
+@media all and (max-width: 800px){
+    .carousel_content_block{
+        width: 100%;
+        padding-left: 30px;
+    }
+}
+
+@media all and (max-width: 800px){
+    .carousel_content_block{
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
 .carousel_square_block{
     display: flex;
     flex-direction: row;
@@ -101,4 +135,13 @@
     font-size: 36px;
     line-height: 48px;
     color: #FFFFFF;
+}
+
+@media all and (max-width: 800px){
+    .carousel_left_button{
+        left: 26%;
+    }
+    .carousel_right_button{
+        right: 26%;
+    }
 }

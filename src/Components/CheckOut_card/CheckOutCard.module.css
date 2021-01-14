@@ -1,5 +1,6 @@
 .check_out_block{
     max-width: 350px;
+    min-height: 432px;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
     margin: 20px;

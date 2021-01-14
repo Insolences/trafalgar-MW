@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    max-width: 1247px;
 }
 
 .navbar a{
@@ -17,13 +18,16 @@
     line-height: 23px;
     color: #1F1534;
     opacity: 0.5;
+    text-decoration: none;
 }
 
-.navbar a:first-child{
+.navbar li:first-child{
     font-weight: bold;
-    opacity: 1;
+    font-size: 18px;
+    line-height: 23px;
+    color: #1F1534;
 }
 
 .menuLink{
-    margin-right: 40px;
+    margin-right: 20px;
 }
