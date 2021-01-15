@@ -37,7 +37,7 @@ export default class testCarousel extends React.Component {
                             className={isActivePage ? s.carousel_active_square : s.carousel_square}
                             key={page}
                             onClick={() => onClick(page)}
-                            active={isActivePage}
+                            active={isActivePage.toString()}
                         />
                     )
                 })}
@@ -53,7 +53,7 @@ export default class testCarousel extends React.Component {
                     <div className={s.carousel_img_block}>
                         <img src={img} className={s.carousel_img}/>
                         <div>
-                            <h4>Edward Newgate</h4>
+                            <h4  className={s.carousel_h4}>Edward Newgate</h4>
                             <p>Founder Circle</p>
                         </div>
                     </div>

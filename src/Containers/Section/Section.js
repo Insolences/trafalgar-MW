@@ -11,7 +11,6 @@ export function Section({
                             content='',
                             button_blue_color = true,
                             button_text = '',
-                            background = ''
 }) {
     return (
         <div className={s.section}>

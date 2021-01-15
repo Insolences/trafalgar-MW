@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
+    max-width: 1240px;
 }
 
 .footer_content_block{
@@ -78,6 +79,12 @@
 }
 
 @media  (max-width: 900px) {
+    .footer{
+        padding: 15px;
+    }
+}
+
+@media  (max-width: 900px) {
     .footer_content{
         flex-direction: column;
     }
@@ -88,5 +95,6 @@
         width: 100%;
     }
 }
+
 
 

@@ -1,3 +1,7 @@
-.App {
-  text-align: center;
+.app {
+    width: 100%;
+}
+
+.app *{
+    box-sizing: border-box;
 }

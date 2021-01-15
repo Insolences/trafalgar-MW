@@ -14,7 +14,7 @@ import download_mobile_img from "../../img/download_mobile_img.png"
 
 import detection_img from "../../img/CheckOut/image1.png"
 import medicines_img from "../../img/CheckOut/image2.png"
-import natural_img from "../../img/CheckOut/image2.png"
+import natural_img from "../../img/CheckOut/image3.png"
 
 import {Section} from "../Section/Section";
 import {CardService} from "../../Components/Card_service/CardService";
@@ -61,19 +61,20 @@ export default class Main extends React.Component{
     }
 
 render() {
-
     return (
         <div className={s.main}>
-            <Section reverse={false}
-                     ractangle={false}
-                     title='Virtual healthcare for you'
-                     content='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
+            <div className={s.header_section_bg}>
+                <Section reverse={false}
+                         ractangle={false}
+                         title='Virtual healthcare for you'
+                         content='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
                       To us, it’s not just work. We take pride in the solutions we deliver'
-                     img={header_illustration_img}
-                     button_blue_color={true}
-                     button_text = 'Consult today'
-                     background=''
-            />
+                         img={header_illustration_img}
+                         button_blue_color={true}
+                         button_text = 'Consult today'
+                         background=''
+                />
+            </div>
             <div className={s.section}>
                 <div className={s.main_title}>
                     <h3>Our services</h3>
@@ -112,26 +113,28 @@ render() {
                     />
                 </div>
             </div>
-            <Button text='Learn more'/>
-            <Section reverse={true}
-                     ractangle={true}
-                     title='Leading healthcare providers'
-                     content='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
+            <div className={s.margin_block}>
+                <Button text='Learn more'/>
+            </div>
+            <div className={s.healthcare_section_bg}>
+                <Section reverse={true}
+                         ractangle={true}
+                         title='Leading healthcare providers'
+                         content='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
                      To us, it’s not just work. We take pride in the solutions we deliver'
-                     img={leading_providers_img}
-                     button_blue_color={false}
-                     button_text = 'Learn more'
-                     background=''
-            />
+                         img={leading_providers_img}
+                         button_blue_color={false}
+                         button_text = 'Learn more'
+                />
+            </div>
             <Section reverse={false}
                      ractangle={true}
-                     title='Leading healthcare providers'
-                     content='Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone.
-                     To us, it’s not just work. We take pride in the solutions we deliver'
+                     title='Download our mobile apps'
+                     content='Our dedicated patient engagement app and web portal allow you to access
+                         information instantaneously (no tedeous form, long calls, or administrative hassle) and securely'
                      img={download_mobile_img}
                      button_blue_color={false}
                      button_text='Download'
-                     background=''
             />
             <div className={s.carousel_container}>
                 <div className={s.carousel_content}>
@@ -144,7 +147,7 @@ render() {
                     {this.viewTest()}
                     {this.state.viewAll? this.viewTest(): ''}
                     <Button
-                        text='View all'
+                        text={this.state.viewAll?'Hide':'View all'}
                         onClick={
                             ()=>this.viewAll()
                         }

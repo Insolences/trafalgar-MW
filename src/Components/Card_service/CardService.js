@@ -5,7 +5,7 @@ import s from "./CardService.module.css";
 export function CardService({ img, title, content }) {
     return (
         <div className={s.card_service}>
-            <div>
+            <div className={s.card_service_img}>
                 <img src={img}/>
             </div>
             <h4>{title}</h4>

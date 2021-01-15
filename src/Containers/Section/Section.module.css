@@ -1,8 +1,6 @@
 .section{
     width: 100%;
     position: relative;
-    background-image: url("../../img/header_content_bg.png");
-    background-repeat: no-repeat;
 }
 
 .section_content{
@@ -10,6 +8,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
+    max-width: 1240px;
     margin: 84px auto;
 }
 

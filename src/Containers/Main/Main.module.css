@@ -2,6 +2,12 @@
     width: 100%;
 }
 
+.margin_block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .section{
     width: 100%;
     background-image: url("../../img/service_bg_element.png");
@@ -20,6 +26,7 @@
     font-size: 36px;
     line-height: 56px;
     color: #000000;
+    text-align: center;
 }
 
 .section p{
@@ -36,6 +43,20 @@
     justify-content: center;
     max-width: 1320px;
     margin: 84px auto 0 auto;
+    background-image: url("../../img/bg_section_el.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.header_section_bg{
+    background-image: url("../../img/bg_section_el.png");
+    background-repeat: no-repeat;
+}
+
+.healthcare_section_bg{
+    background-image: url("../../img/bg_section_el.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .section_content:last-child{
@@ -87,6 +108,7 @@
 
 .check_out_card_list{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
