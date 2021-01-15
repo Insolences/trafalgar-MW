@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/trafalgar-MW/static/css/main.ac9a712f.chunk.css",
-    "main.js": "/trafalgar-MW/static/js/main.402ac6ed.chunk.js",
-    "main.js.map": "/trafalgar-MW/static/js/main.402ac6ed.chunk.js.map",
+    "main.css": "/trafalgar-MW/static/css/main.516be804.chunk.css",
+    "main.js": "/trafalgar-MW/static/js/main.728418fa.chunk.js",
+    "main.js.map": "/trafalgar-MW/static/js/main.728418fa.chunk.js.map",
     "runtime-main.js": "/trafalgar-MW/static/js/runtime-main.6a82eba0.js",
     "runtime-main.js.map": "/trafalgar-MW/static/js/runtime-main.6a82eba0.js.map",
-    "static/js/2.86831b6c.chunk.js": "/trafalgar-MW/static/js/2.86831b6c.chunk.js",
-    "static/js/2.86831b6c.chunk.js.map": "/trafalgar-MW/static/js/2.86831b6c.chunk.js.map",
+    "static/js/2.f7400be8.chunk.js": "/trafalgar-MW/static/js/2.f7400be8.chunk.js",
+    "static/js/2.f7400be8.chunk.js.map": "/trafalgar-MW/static/js/2.f7400be8.chunk.js.map",
     "static/js/3.834dd7bf.chunk.js": "/trafalgar-MW/static/js/3.834dd7bf.chunk.js",
     "static/js/3.834dd7bf.chunk.js.map": "/trafalgar-MW/static/js/3.834dd7bf.chunk.js.map",
     "index.html": "/trafalgar-MW/index.html",
-    "static/css/main.ac9a712f.chunk.css.map": "/trafalgar-MW/static/css/main.ac9a712f.chunk.css.map",
-    "static/js/2.86831b6c.chunk.js.LICENSE.txt": "/trafalgar-MW/static/js/2.86831b6c.chunk.js.LICENSE.txt",
+    "static/css/main.516be804.chunk.css.map": "/trafalgar-MW/static/css/main.516be804.chunk.css.map",
+    "static/js/2.f7400be8.chunk.js.LICENSE.txt": "/trafalgar-MW/static/js/2.f7400be8.chunk.js.LICENSE.txt",
     "static/media/carousel_img1.1d13811c.png": "/trafalgar-MW/static/media/carousel_img1.1d13811c.png",
     "static/media/carousel_img2.aa3e1831.jpg": "/trafalgar-MW/static/media/carousel_img2.aa3e1831.jpg",
     "static/media/carousel_img3.b21bbb3a.jpg": "/trafalgar-MW/static/media/carousel_img3.b21bbb3a.jpg",
@@ -19,14 +19,15 @@
     "static/media/download_mobile_img.6059c607.png": "/trafalgar-MW/static/media/download_mobile_img.6059c607.png",
     "static/media/image1.89ceaa9e.png": "/trafalgar-MW/static/media/image1.89ceaa9e.png",
     "static/media/image2.059031e1.png": "/trafalgar-MW/static/media/image2.059031e1.png",
+    "static/media/image3.a1437bc4.png": "/trafalgar-MW/static/media/image3.a1437bc4.png",
     "static/media/leading-providers-illustration.f6450ab1.png": "/trafalgar-MW/static/media/leading-providers-illustration.f6450ab1.png",
     "static/media/Main.module.css": "/trafalgar-MW/static/media/service_bg_element.b3a9f454.png",
     "static/media/trafalgar-header illustration.f00e4b58.png": "/trafalgar-MW/static/media/trafalgar-header illustration.f00e4b58.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6a82eba0.js",
-    "static/js/2.86831b6c.chunk.js",
-    "static/css/main.ac9a712f.chunk.css",
-    "static/js/main.402ac6ed.chunk.js"
+    "static/js/2.f7400be8.chunk.js",
+    "static/css/main.516be804.chunk.css",
+    "static/js/main.728418fa.chunk.js"
   ]
 }
