@@ -76,3 +76,18 @@
 .section_img{
     width: 100%;
 }
+
+.ractangle_line{
+    position: relative;
+}
+
+.ractangle_line:after{
+    content: '';
+    width: 56px;
+    height: 2px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: -25px;
+    left: 150px;
+}

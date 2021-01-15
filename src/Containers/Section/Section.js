@@ -17,7 +17,7 @@ export function Section({
             <div className={`${s.section_content} ${reverse ? s.reverse : ''}`}>
                 <div className={s.section_title}>
                     <h3>{title}</h3>
-                    { ractangle ? '---------' : ''}
+                    { ractangle ? <span className={s.ractangle_line}></span> : ''}
                     <p>{content}</p>
                     <Button filled={button_blue_color} text={button_text}/>
                 </div>
