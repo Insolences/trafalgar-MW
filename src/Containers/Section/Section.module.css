@@ -38,6 +38,7 @@
 @media all and (max-width: 1180px){
     .section_title{
         width: 90%;
+        margin-left: 0;
     }
 }
 

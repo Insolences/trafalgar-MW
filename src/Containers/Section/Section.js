@@ -1,6 +1,5 @@
 import React from "react";
-import s from "./Section.module.css";
-// import img from "../../img/trafalgar-header illustration.png"
+import classes from "./Section.module.css";
 import {Button} from "../../Components/Button/Button";
 
 export function Section({
@@ -13,16 +12,16 @@ export function Section({
                             button_text = '',
 }) {
     return (
-        <div className={s.section}>
-            <div className={`${s.section_content} ${reverse ? s.reverse : ''}`}>
-                <div className={s.section_title}>
+        <div className={classes.section}>
+            <div className={`${classes.section_content} ${reverse ? classes.reverse : ''}`}>
+                <div className={classes.section_title}>
                     <h3>{title}</h3>
-                    { ractangle ? <span className={s.ractangle_line}></span> : ''}
+                    { ractangle ? <span className={classes.ractangle_line}></span> : ''}
                     <p>{content}</p>
                     <Button filled={button_blue_color} text={button_text}/>
                 </div>
-                <div className={s.section_img_container}>
-                    <img src={img} className={s.section_img} alt=''/>
+                <div className={classes.section_img_container}>
+                    <img src={img} className={classes.section_img} alt=''/>
                 </div>
             </div>
         </div>

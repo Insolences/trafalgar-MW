@@ -114,3 +114,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@media all and (max-width: 900px)  {
+    .margin_block button{
+        width: 90%;
+    }
+}

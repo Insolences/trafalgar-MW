@@ -1,0 +1,67 @@
+.navbar {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+li {
+    padding: 18px 8px;
+}
+
+@media (max-width: 900px) {
+    .navbar{
+        flex-flow: column nowrap;
+        background-color: #FFF;
+        position: fixed;
+        transform: translateX(100%);
+        top: -16px;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        padding-top: 3.5rem;
+        transition: transform 0.3s ease-in-out;
+        z-index: 5;
+    }
+
+    li a {
+        font-size: 18px;
+        line-height: 23px;
+        color: #1F1534;
+        opacity: 0.5;
+        text-decoration: none;
+     }
+
+    .navbar_active{
+        flex-flow: column nowrap;
+        background-color: #FFF;
+        position: fixed;
+        transform: translateX(0);
+        top: -16px;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        padding-top: 3.5rem;
+        transition: transform 0.3s ease-in-out;
+        z-index: 5;
+        list-style: none;
+    }
+}
+
+.navbar a{
+    font-size: 18px;
+    line-height: 23px;
+    color: #1F1534;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.navbar li:first-child{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #1F1534;
+}
+
+.menuLink{
+    margin-right: 20px;
+}

@@ -1,11 +1,11 @@
-import './App.css';
+import classes from "./App.css"
 import {Header} from "../Header/Header";
 import Main from "../Main/Main";
 import {Footer} from "../Footer/Footer";
 
 function App() {
   return (
-    <div className="app">
+    <div className={classes.app}>
       <Header/>
       <Main/>
       <Footer/>

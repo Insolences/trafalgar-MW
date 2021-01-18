@@ -1,5 +1,5 @@
 import Carousel from 'react-elastic-carousel'
-import s from './Carousel.module.css';
+import classes from './Carousel.module.css';
 import arrow_to_right from  '../../img/carousel/arrow_to_right.png'
 import arrow_to_left from  '../../img/carousel/arrow_to_left.png'
 import carousel_img1 from '../../img/carousel/carousel_img1.png'
@@ -19,7 +19,7 @@ export default class testCarousel extends React.Component {
     }
 
     renderArrow({ type, onClick, isEdge }) {
-        const pointer = type === 'PREV' ? <img src={arrow_to_left} alt={"prevArrow"} className={s.carousel_left_button}/> : <img src={arrow_to_right} alt={"nextArrow"} className={s.carousel_right_button}/>
+        const pointer = type === 'PREV' ? <img src={arrow_to_left} alt={"prevArrow"} className={classes.carousel_left_button}/> : <img src={arrow_to_right} alt={"nextArrow"} className={classes.carousel_right_button}/>
         return (
             <div onClick={() => onClick() } disabled={isEdge} >
                 {pointer}
@@ -29,12 +29,12 @@ export default class testCarousel extends React.Component {
 
     renderPagination = ({ pages, activePage, onClick }) =>{
         return(
-            <div className={s.carousel_square_block} >
+            <div className={classes.carousel_square_block} >
                 {pages.map(page => {
                     const isActivePage = activePage === page
                     return (
                         <div
-                            className={isActivePage ? s.carousel_active_square : s.carousel_square}
+                            className={isActivePage ? classes.carousel_active_square : classes.carousel_square}
                             key={page}
                             onClick={() => onClick(page)}
                             active={isActivePage.toString()}
@@ -47,17 +47,17 @@ export default class testCarousel extends React.Component {
 
     createCarouselItemContent = (id, title, img) => {
         return (
-            <div className={s.carousel_img_bg} key={id} title={title}>
-                <h3 className={s.carousel_h3}>What our customer are saying</h3>
-                <div className={s.carousel_content}>
-                    <div className={s.carousel_img_block}>
-                        <img src={img} className={s.carousel_img}/>
+            <div className={classes.carousel_img_bg} key={id} title={title}>
+                <h3 className={classes.carousel_h3}>What our customer are saying</h3>
+                <div className={classes.carousel_content}>
+                    <div className={classes.carousel_img_block}>
+                        <img src={img} className={classes.carousel_img}/>
                         <div>
-                            <h4  className={s.carousel_h4}>Edward Newgate</h4>
+                            <h4  className={classes.carousel_h4}>Edward Newgate</h4>
                             <p>Founder Circle</p>
                         </div>
                     </div>
-                    <div className={s.carousel_content_block}>
+                    <div className={classes.carousel_content_block}>
                         <p>
                             “Our dedicated patient engagement app and
                             web portal allow you to access information instantaneously (no tedeous form, long calls,

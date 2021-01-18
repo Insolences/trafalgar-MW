@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Main.module.css";
+import classes from "./Main.module.css";
 
 import search_doctor from "../../img/card_service/search_doctor.png";
 import consultation from "../../img/card_service/consultation.png";
@@ -25,12 +25,12 @@ import {CheckOutCard} from "../../Components/CheckOut_card/CheckOutCard";
 export default class Main extends React.Component{
 
     state = {
-        viewAll : false
+        viewAllCheckOutContainers : false
     }
 
     viewTest = ()=>{
         return(
-            <div className={s.check_out_card_list}>
+            <div className={classes.check_out_card_list}>
                 <CheckOutCard
                     img={detection_img}
                     title='Disease detection, check up in the laboratory'
@@ -51,19 +51,19 @@ export default class Main extends React.Component{
         )
     }
 
-    viewAll = () =>{
-        let test = this.state.viewAll
+    viewAllCheckOutContainers = () =>{
+        let test = this.state.viewAllCheckOutContainers
         test = !test
         this.setState(()=>{
-            this.state.viewAll = test
+            this.state.viewAllCheckOutContainers = test
         })
         this.forceUpdate()
     }
 
 render() {
     return (
-        <div className={s.main}>
-            <div className={s.header_section_bg}>
+        <div className={classes.main}>
+            <div className={classes.header_section_bg}>
                 <Section reverse={false}
                          ractangle={false}
                          title='Virtual healthcare for you'
@@ -75,12 +75,12 @@ render() {
                          background=''
                 />
             </div>
-            <div className={s.section}>
-                <div className={s.main_title}>
+            <div className={classes.section}>
+                <div className={classes.main_title}>
                     <h3>Our services</h3>
                     <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
                 </div>
-                <div className={s.section_content}>
+                <div className={classes.section_content}>
                     <CardService
                         img={search_doctor}
                         title="Search doctor"
@@ -113,10 +113,10 @@ render() {
                     />
                 </div>
             </div>
-            <div className={s.margin_block}>
+            <div className={classes.margin_block}>
                 <Button text='Learn more'/>
             </div>
-            <div className={s.healthcare_section_bg}>
+            <div className={classes.healthcare_section_bg}>
                 <Section reverse={true}
                          ractangle={true}
                          title='Leading healthcare providers'
@@ -136,20 +136,20 @@ render() {
                      button_blue_color={false}
                      button_text='Download'
             />
-            <div className={s.carousel_container}>
-                <div className={s.carousel_content}>
+            <div className={classes.carousel_container}>
+                <div className={classes.carousel_content}>
                     <Carousel/>
                 </div>
             </div>
-            <div className={s.check_out_container}>
-                <div className={s.check_out_content}>
+            <div className={classes.check_out_container}>
+                <div className={classes.check_out_content}>
                     <h3>Check out our latest article</h3>
                     {this.viewTest()}
-                    {this.state.viewAll? this.viewTest(): ''}
+                    {this.state.viewAllCheckOutContainers? this.viewTest(): ''}
                     <Button
-                        text={this.state.viewAll?'Hide':'View all'}
+                        text={this.state.viewAllCheckOutContainers?'Hide':'View all'}
                         onClick={
-                            ()=>this.viewAll()
+                            ()=>this.viewAllCheckOutContainers()
                         }
                     />
                 </div>
