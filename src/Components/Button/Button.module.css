@@ -12,7 +12,7 @@
     margin-top: 40px;
 }
 
-.blue {
+.button:hover {
     background-color: #458FF6;
     color: #ffffff;
 }
@@ -22,3 +22,4 @@
         width: 100%;
     }
 }
+

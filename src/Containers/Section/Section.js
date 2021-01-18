@@ -8,7 +8,6 @@ export function Section({
                             img = '',
                             ractangle = false,
                             content='',
-                            button_blue_color = true,
                             button_text = '',
 }) {
     return (
@@ -18,7 +17,7 @@ export function Section({
                     <h3>{title}</h3>
                     { ractangle ? <span className={classes.ractangle_line}></span> : ''}
                     <p>{content}</p>
-                    <Button filled={button_blue_color} text={button_text}/>
+                    <Button text={button_text}/>
                 </div>
                 <div className={classes.section_img_container}>
                     <img src={img} className={classes.section_img} alt=''/>

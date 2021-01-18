@@ -52,10 +52,10 @@ export default class Main extends React.Component{
     }
 
     viewAllCheckOutContainers = () =>{
-        let test = this.state.viewAllCheckOutContainers
-        test = !test
+        let check = this.state.viewAllCheckOutContainers
+        check = !check
         this.setState(()=>{
-            this.state.viewAllCheckOutContainers = test
+            this.state.viewAllCheckOutContainers = check
         })
         this.forceUpdate()
     }

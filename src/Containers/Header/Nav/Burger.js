@@ -18,7 +18,6 @@ export default class Burger extends React.Component {
 
     render() {
         {
-            console.log(this.state.open)
             return (
                 <>
                     <div className={this.state.open ? classes.burger_active : classes.burger}
