@@ -51,7 +51,7 @@ export default class Main extends React.Component{
         )
     }
 
-    viewAll = ()=>{
+    viewAll = () =>{
         let test = this.state.viewAll
         test = !test
         this.setState(()=>{
